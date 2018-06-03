@@ -104,7 +104,7 @@ module.exports = (client) => {
       } else if (client.aliases.has(commandName)) {
         command = client.commands.get(client.aliases.get(commandName));
       }
-      if (!command) return `The command \`${commandName}\` doesn't seem to exist, nor is it an alias. Check your capitalization perhaps?`;
+      if (!command) return `the command \`${commandName}\` doesn't seem to exist, nor is it an alias. Check your capitalization perhaps?`;
     
       if (command.shutdown) {
         await command.shutdown(client);
