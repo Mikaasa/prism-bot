@@ -32,7 +32,7 @@ const config = {
         "systemNotice": "true", // This gives a notice when a user tries to run a command that they do not have permission to use.
         "welcomeChannel": "join-logs",
         "welcomeMessage": "[**USER JOINED**] {{user}}",
-        "welcomeEnabled": "true"
+        "welcomeEnabled": "false"
     },
 
     // PERMISSION LEVEL DEFINITIONS.

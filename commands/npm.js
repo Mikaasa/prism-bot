@@ -60,7 +60,7 @@ exports.run = async (bot, message, args) => {
                 }
             })
             console.error("Failed to grab NPM Package.", error.message);
-            message.reply("The NPM Package " + args[0] + " was not found. Check your capitalization, perhaps?") 
+            message.reply("the NPM Package " + args[0] + " was not found. Check your capitalization, perhaps?") 
         })
     } else {
         message.channel.send({
