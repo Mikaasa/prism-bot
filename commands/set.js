@@ -54,7 +54,7 @@ exports.run = async (client, message, [action, key, ...value], level) => { // es
     if (!key) return message.reply("please specify a key to view.");
     if (!settings[key]) return message.reply("this key does not exist in the settings.");
     const isDefault = !overrides[key] ? "\nThis is the default global default value." : "";
-    message.reply(`The value of ${key} is currently ${settings[key]}${isDefault}`);
+    message.reply(`the value of ${key} is currently ${settings[key]}${isDefault}`);
   } else {
     message.channel.send(inspect(settings), {code: "json"});
   }
